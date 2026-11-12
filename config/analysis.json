@@ -1,0 +1,54 @@
+{
+  "prompt_version": "v2.2-p2",
+  "_note_prompt": "v2.0-p2/v2.1-p2 的历史结果保留在 analyses 中（幂等键含 prompt_version）；2026-11-06 升级到 v2.2-p2，仅收紧 missing_features 边界并重跑 53 条；2026-11-09 的 v2.3 只在 60 条标注样本上验证，未达推广标准，全局版本仍为 v2.2-p2",
+  "active_backend": "ollama",
+  "_note_model": "2026-11-06 起统一使用 qwen3:8b；llama3.1:8b 仅保留为历史试跑基线",
+  "theme_codes": [
+    "account_login",
+    "pricing_subscription",
+    "answer_quality",
+    "speed_latency",
+    "stability_crash",
+    "missing_features",
+    "ui_usability",
+    "privacy_security",
+    "customer_support",
+    "sync_platform",
+    "model_limits",
+    "other"
+  ],
+  "analysis": {
+    "min_content_len": 10,
+    "min_quote_len": 4,
+    "confidence_threshold": 0.5
+  },
+  "batch": {
+    "trial_size": 30,
+    "max_attempts": 2
+  },
+  "backends": {
+    "ollama": {
+      "base_url": "http://localhost:11434",
+      "chat_path": "/api/chat",
+      "model": "qwen3:8b",
+      "temperature": 0,
+      "num_ctx": 4096,
+      "timeout_seconds": 180,
+      "max_wall_seconds": 180
+    },
+    "openai_compat": {
+      "enabled": false,
+      "_note": "在线免费模型对比用。启用：enabled=true 并填 base_url/model，或设置环境变量 FEEDBACKLENS_API_BASE / FEEDBACKLENS_API_MODEL / FEEDBACKLENS_API_KEY。API key 只放环境变量，禁止写进本文件或提交到仓库；缺少 key 时会提示并回退本地模型。",
+      "base_url": "",
+      "chat_path": "/v1/chat/completions",
+      "model": "",
+      "api_key_env": "FEEDBACKLENS_API_KEY",
+      "temperature": 0,
+      "response_format": "json_object",
+      "timeout_seconds": 60,
+      "max_wall_seconds": 60,
+      "max_retries": 1,
+      "retry_backoff_seconds": 2
+    }
+  }
+}

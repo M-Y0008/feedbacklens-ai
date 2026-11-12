@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 数据库备份与临时状态（运行时生成）
+*.bak
+*.bak-shm
+*.bak-wal
+*.db-wal
+*.db-shm
+*.mock.db
+*.mock.db-*
+_audit/
+
+# 运行产物
+data/uploads/*
+!data/uploads/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+
+# 阶段性报告（内部材料，不随仓库分发）
+reports/
+
+# 本地配置与密钥
+.env
+.env.*
+.streamlit/secrets.toml
+*.key
+*.pem
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
