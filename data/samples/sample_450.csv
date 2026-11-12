@@ -1,4 +1,4 @@
-﻿review_id,app_name,package_name,score,at_utc,content,thumbs_up_count,review_created_version,app_version,scrape_lang,scrape_country,scraped_at_utc
+review_id,app_name,package_name,score,at_utc,content,thumbs_up_count,review_created_version,app_version,scrape_lang,scrape_country,scraped_at_utc
 02db1c2f-c667-457f-ba4b-424ea683b492,ChatGPT_OpenAI,com.openai.chatgpt,1,2025-11-19T08:24:04+00:00,wrost aap i see in my life,0,1.2025.315,1.2025.315,en,us,2025-11-23T13:06:19.186836+00:00
 0371b37f-fc7c-4b22-ae90-51a29d3fe5aa,ChatGPT_OpenAI,com.openai.chatgpt,1,2025-11-18T18:32:59+00:00,am failing to sing in,0,1.2025.315,1.2025.315,en,us,2025-11-23T13:06:19.186836+00:00
 058f1fbd-8917-457b-b44f-218d997ae34c,ChatGPT_OpenAI,com.openai.chatgpt,1,2025-11-20T18:06:38+00:00,too much slow,0,1.2025.315,1.2025.315,en,us,2025-11-23T13:06:19.186836+00:00

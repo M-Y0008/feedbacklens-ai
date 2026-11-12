@@ -672,10 +672,10 @@ taskkill /PID <PID> /F
 或直接换端口启动：
 
 ```powershell
-python -m streamlit run app/main.py --server.port 8502
+python -m streamlit run app/main.py --server.port 8511
 ```
 
-然后打开 http://localhost:8502。
+然后打开 http://localhost:8511。
 
 ### 8.2 模型未就绪或名称不匹配
 
@@ -793,7 +793,7 @@ cd <项目目录>
 python -m streamlit run app/main.py
 
 # 换端口启动
-python -m streamlit run app/main.py --server.port 8502
+python -m streamlit run app/main.py --server.port 8511
 
 # 查看端口占用
 netstat -ano | findstr :8501
