@@ -105,6 +105,10 @@ python scripts/p2_online_compare.py --probe
 
 ## 许可
 
-- **数据**：CC BY 4.0，署名见上（Özen & Demir, doi:10.17632/dnkdxxdpzk.1）。
-- **代码**：作者尚未最终指定开源许可，正式发布前会在 `LICENSE` 中补充
-  （建议 MIT 或 Apache-2.0）。
+本项目采用**代码与数据分开授权**：
+
+- **代码**：MIT License，全文见 [LICENSE](LICENSE)。
+  Copyright (c) 2026 FeedbackLens AI。
+- **数据**：CC BY 4.0。数据来自
+  Özen, Ü. & Demir, F. (2026), Mendeley Data, V1, doi:10.17632/dnkdxxdpzk.1；
+  再分发或改编时必须保留署名与 DOI，详见 [data/README.md](data/README.md)。
