@@ -16,6 +16,9 @@ env/
 *.mock.db-*
 _audit/
 
+# 原始数据不随仓库分发（含评论者个人信息，见 data/README.md）
+data/raw/
+
 # 运行产物
 data/uploads/*
 !data/uploads/.gitkeep
